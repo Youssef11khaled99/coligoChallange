@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -19,4 +20,10 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.partitionTwo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
 }

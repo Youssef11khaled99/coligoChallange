@@ -1,24 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
+import SignIn from './components/SignIn/SignIn';
+// import {upcoming} from './upcoming';
 import './App.css';
-
+import SideNav from './components/SideNav/SideNav';
+import Hero from './components/Hero/Hero';
+import NavBar from './components/NavBar/NavBar'
+import Announcements from './components/Announcements/Announcements';
+import UpcomingList from './components/UpcomingList/UpcomingList';
+const upcoming = [
+  {
+    id: 1,
+    name: 'Leanne Graham',
+    username: 'Bret',
+    email: 'Sincere@april.biz'
+  },
+  {
+    id: 2,
+    name: 'Ervin Howell',
+    username: 'Antonette',
+    email: 'Shanna@melissa.tv'
+  }];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideNav />
+      <div>
+        <NavBar />
+        <div>
+          <Hero />
+          <div className="partitionTwo">
+            <Announcements />
+            <UpcomingList upcomingNew={upcoming} />
+          </div>
+        </div>     
+      </div>
+      
+      {/* <UpcomingList upcomingNew = {upcoming}/> */}
     </div>
   );
 }
