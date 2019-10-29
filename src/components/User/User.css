@@ -1,0 +1,25 @@
+.user {
+    display: flex;
+}
+
+.info {
+    margin: 0px 5px 0px 5px;
+}
+
+.avImg {
+    margin-top: 15px;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 65px;
+    margin: 8px 10px 0px 10px;
+  }
+
+span {
+    color: gray;
+}
+
+.description {
+    margin-top: 15px;
+}

@@ -1,12 +1,11 @@
 import React from 'react';
-import SignIn from './components/SignIn/SignIn';
 // import {upcoming} from './upcoming';
 import './App.css';
 import SideNav from './components/SideNav/SideNav';
-import Hero from './components/Hero/Hero';
+import ExamBanner from './components/Exam Banner/ExamBanner';
 import NavBar from './components/NavBar/NavBar'
 import Announcements from './components/Announcements/Announcements';
-import UpcomingList from './components/UpcomingList/UpcomingList';
+import WhatsDue from './components/WhatsDue/WhatsDue';
 const upcoming = [
   {
     id: 1,
@@ -27,10 +26,10 @@ function App() {
       <div>
         <NavBar />
         <div>
-          <Hero />
+          <ExamBanner />
           <div className="partitionTwo">
             <Announcements />
-            <UpcomingList upcomingNew={upcoming} />
+            <WhatsDue upcomingNew={upcoming} />
           </div>
         </div>     
       </div>

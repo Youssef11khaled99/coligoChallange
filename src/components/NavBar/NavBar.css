@@ -1,29 +1,27 @@
-ul.topnav {
+.navContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul.topNav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
   }
   
-  ul.topnav li {float: left;}
+  /* ul.topNav li {
+    float: left;
+    color: rgb(13, 168, 148);
+    cursor: pointer;
+    margin-left: 10px;
+  } */
   
-  ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  ul.topnav li a:hover:not(.active) {background-color: #111;}
-  
-  ul.topnav li a.active {background-color: #4CAF50;}
-  
-  ul.topnav li.right {float: right;}
+  /* ul.topNav li:hover {color: rgb(1, 255, 221);} */
+
   
   @media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
+    ul.topNav li.right, 
+    ul.topNav li {float: none;}
   }
   

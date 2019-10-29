@@ -1,0 +1,24 @@
+
+.searchFrom{
+  margin: 13px;
+}
+.search { 
+  color:#bcbcbc;
+  border-radius:15px; 
+  -moz-border-radius:15px; 
+  -webkit-border-radius:15px; 
+  border:1px solid white;
+  background-color:#fcfcfc;
+  padding: 10px;
+}
+
+ .search:focus{ 
+  outline: none;
+}
+
+.searchFrom button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
